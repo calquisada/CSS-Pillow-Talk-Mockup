@@ -77,12 +77,12 @@ h1 {
   /*********************************
  * Aside/Nav
  *********************************/ 
-aside {
+ aside {
     flex-basis: 15%;
-    min-width: 15%;
+    min-width: 60px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+
 }
 
 ul {
@@ -118,5 +118,29 @@ li {
    width: 32%;
  }                                  
 
-  
+  @media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    aside {
+        width: 90%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    aside ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main {
+width: 100%;
+flex-basis: 100%;
+    }
+  }
     
